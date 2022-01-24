@@ -1,0 +1,56 @@
+.social {
+  padding-left: 20px;
+
+  &--insta {
+    transition: all 0.2s ease-in;
+
+    &:hover svg {
+      fill: var(--color-button);
+    }
+
+    &:focus svg {
+      fill: var(--color-hover);
+    }
+
+    &:active svg {
+      fill: var(--color-active);
+    }
+  }
+
+  &--fb {
+    transition: all 0.2s ease-in;
+
+    &:hover svg {
+      fill: var(--color-button);
+    }
+
+    &:focus svg {
+      fill: var(--color-hover);
+    }
+
+    &:active svg {
+      fill: var(--color-active);
+    }
+  }
+
+  &--vk {
+    transition: all 0.2s ease-in;
+
+    &:hover svg {
+      fill: var(--color-button);
+    }
+
+    &:focus svg {
+      fill: var(--color-hover);
+    }
+
+    &:active svg {
+      fill: var(--color-active);
+    }
+  }
+}
+
+svg {
+  fill: #cacaca;
+  transition: all 0.2s ease-in;
+}

@@ -1,0 +1,17 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+
+  --font-family: "Roboto";
+  --content-width: 1290px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --color-white: #fff;
+  --color-button: #ff6e30;
+  --color-primary: #202020;
+  --color-gray: #cacaca;
+  --color-light: #999999;
+  --color-active: #ce4307;
+  --color-hover: #bc572b;
+}

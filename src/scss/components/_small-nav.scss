@@ -1,0 +1,18 @@
+.small-nav {
+  display: none;
+  background-color: #4a4a4a;
+
+  @include small-tablet {
+    display: block;
+    padding: 12px 0;
+  }
+}
+
+.burger {
+  @include burger;
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

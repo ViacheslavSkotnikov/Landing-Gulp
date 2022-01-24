@@ -1,0 +1,257 @@
+.work {
+  padding-top: 67px;
+  padding-bottom: 65px;
+  background-color: var(--color-white);
+
+  @include mobile {
+    padding-top: 50px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+
+    @include tablet {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__item {
+    &-small {
+      grid-column: auto / span 2;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      &--1 {
+        background-image: url(../img/vista.jpg);
+
+        @include tablet {
+          background-size: 218px 184px;
+        }
+
+        @include small-tablet {
+          grid-column: 1 / span 2;
+          background-size: 218px 184px;
+        }
+
+        @include mobile {
+          margin-bottom: 24px;
+          background-size: 278px 184px;
+        }
+      }
+
+      &--2 {
+        background-image: url(../img/portrait.jpg);
+
+        @include tablet {
+          background-size: 218px 184px;
+        }
+
+        @include small-tablet {
+          grid-column: 3 / span 2;
+          background-size: 218px 184px;
+        }
+
+        @include mobile {
+          margin-bottom: 24px;
+          background-size: 278px 184px;
+        }
+      }
+
+      &--3 {
+        background-image: url(../img/items.jpg);
+
+        @include tablet {
+          grid-column: auto / span 4;
+          background-image: url(../img/items-big.jpg);
+        }
+
+        @include small-tablet {
+          grid-column: 5 / span 2;
+          background-size: 218px 184px;
+          background-image: url(../img/items.jpg);
+        }
+
+        @include mobile {
+          margin-bottom: 24px;
+          background-size: 278px 184px;
+        }
+      }
+    }
+
+    &-descr {
+      margin: 0;
+      max-height: 66px;
+      font-family: "Roboto";
+      font-size: 16px;
+      line-height: 22px;
+      color: var(--color-primary);
+
+      &--small {
+        padding-top: 210px;
+      }
+
+      &--light {
+        max-width: 293px;
+        margin-bottom: 50px;
+        color: var(--color-white);
+
+        @include mobile {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &-date {
+      margin-top: auto;
+      padding-left: 18px;
+      padding-top: 3px;
+      font-size: 12px;
+      line-height: 22px;
+      background-position: left center;
+      background-size: 14px 14px;
+      background-repeat: no-repeat;
+
+      &--light {
+        background-image: url(../img/calendar-light.svg);
+        color: var(--color-white);
+      }
+      &--gray {
+        background-image: url(../img/calendar.svg);
+        color: var(--color-light);
+      }
+    }
+
+    &-big {
+      position: relative;
+      grid-column: auto / span 6;
+      padding-top: 22px;
+      padding-bottom: 30px;
+      padding-left: 30px;
+      background-repeat: no-repeat;
+
+      &--1 {
+        background-image: url(../img/face.jpg);
+
+        @include tablet {
+          grid-column: 1 / span 5;
+          grid-row: 2;
+        }
+
+        @include small-tablet {
+          grid-column: 1 / span 6;
+          grid-row: 2;
+          background-size: 100%;
+        }
+
+        @include mobile {
+          margin-bottom: 35px;
+          padding-top: 196px;
+          background-image: url(../img/face-mobile.jpg);
+        }
+      }
+
+      &--2 {
+        background-image: url(../img/oblivion.jpg);
+
+        @include tablet {
+          grid-column: 4 / span 5;
+          grid-row: 3;
+        }
+
+        @include small-tablet {
+          grid-column: 1 / span 6;
+          grid-row: 4;
+          background-size: 100%;
+        }
+
+        @include mobile {
+          margin-bottom: 35px;
+          padding-top: 196px;
+          background-image: url(../img/oblivion-mobile.jpg);
+        }
+      }
+    }
+
+    &-medium {
+      grid-column: auto / span 3;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      &--1 {
+        background-image: url(../img/fruit.jpg);
+
+        @include tablet {
+          grid-column: 6 / span 3;
+          grid-row: 2;
+          background-size: 342px 184px;
+        }
+
+        @include small-tablet {
+          grid-column: 1 / span 3;
+          grid-row: 3;
+          background-size: 342px 184px;
+        }
+
+        @include mobile {
+          margin-bottom: 35px;
+        }
+      }
+
+      &--2 {
+        background-image: url(../img/portrait2.jpg);
+
+        @include tablet {
+          grid-column: 1 / span 3;
+          grid-row: 3;
+          background-size: 342px 184px;
+        }
+
+        @include small-tablet {
+          grid-column: 4 / span 3;
+          grid-row: 3;
+          background-size: 342px 184px;
+        }
+      }
+    }
+  }
+
+  &-subtitle {
+    margin: 0;
+    max-width: 293px;
+    margin-bottom: 5px;
+    font-family: "TTFirsNeueBold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    color: var(--color-white);
+  }
+}
+
+.btn-margin {
+  margin-bottom: 100px;
+
+  @include mobile {
+    margin-bottom: 5px;
+  }
+}

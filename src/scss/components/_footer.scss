@@ -1,0 +1,105 @@
+.footer {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  background-color: var(--color-primary);
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  &__container {
+    @include flex-all-sb;
+
+    @include mobile {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include mobile {
+        @include flex-all-sb;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &-license {
+    margin: 0;
+    font-family: "TTFirsNeueRegular";
+    font-size: 14px;
+    line-height: 18px;
+    color: #e9e9e9;
+
+    @include mobile {
+      max-width: 200px;
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+
+  &-left {
+    &--mobile {
+      @include mobile {
+        order: 2;
+        padding: 15px 75px;
+        background-color: #4a4a4a;
+        text-align: center;
+      }
+    }
+  }
+
+  &-descr {
+    max-width: 360px;
+
+    @include small-tablet {
+      display: none;
+    }
+
+    &__quote {
+      margin: 0;
+      font-family: "Roboto";
+      font-size: 16px;
+      line-height: 22px;
+      color: var(--color-gray);
+    }
+
+    &__author {
+      margin: 0;
+      font-family: "Roboto";
+      font-size: 16px;
+      line-height: 22px;
+      color: var(--color-light);
+    }
+  }
+
+  &-social {
+    padding-left: 150px;
+
+    @include tablet {
+      padding-left: 50px;
+    }
+
+    &--mobile {
+      @include mobile {
+        order: 1;
+        margin-bottom: 30px;
+        padding: 0;
+      }
+    }
+
+    &__descr {
+      margin: 0;
+      margin-bottom: 8px;
+      text-align: left;
+      font-family: "Roboto";
+      font-size: 16px;
+      line-height: 22px;
+      color: var(--color-gray);
+    }
+  }
+}
+
+.social-footer {
+  @include flex-v-center;
+}

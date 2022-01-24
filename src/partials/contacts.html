@@ -1,0 +1,54 @@
+<section class="contacts">
+  <div class="container contacts__container">
+    <h2 class="main-subtitle main-subtitle--dark">Контакты</h2>
+    <ul class="contacts__list list-reset">
+      <li class="contacts__item contacts__item-left"></li>
+      <li class="contacts__item contacts__item-overlay overlay">
+        <img src="img/close.svg" class="overlay-icon" alt="close" />
+        <h4 class="overlay-title">Студия “High pass”</h4>
+        <p class="overlay-descr">
+          107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж
+          8, офис № 82
+        </p>
+        <span class="overlay-tel">+7 (495) 42-423-532</span>
+      </li>
+      <li class="contacts__item contacts__item-right">
+        <h4 class="contacts__caption">Оставить заявку</h4>
+        <p class="contacts__descr">
+          Оставьте ваши данные, указав в графе “Комментарий” желаемые время и
+          дату съемки или другого мероприятия
+        </p>
+        <form action="#" id="contacts-form" class="contacts-form">
+          <div class="contacts-form__content">
+            <label class="form-label">
+              <input
+                class="form-field__input contacts-form__input"
+                type="text"
+                placeholder="Имя"
+                id="username"
+              />
+              <small>Error message</small>
+            </label>
+            <label class="form-label">
+              <input
+                class="form-field__input contacts-form__input"
+                type="email"
+                placeholder="E-mail"
+                id="contacts-email"
+              />
+              <small>Error message</small>
+            </label>
+            <textarea
+              rows="5"
+              placeholder="Комментарий"
+              class="form-field__input contacts-form__textarea"
+            ></textarea>
+            <button class="btn-reset btn btn--fill" type="submit">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </div>
+</section>
